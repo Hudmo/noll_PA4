@@ -3,9 +3,9 @@ import java.io.IOException;
 
 public class Application {
     public static void main (String [] args) throws IOException {
-        DuplicateCounter use = new DuplicateCounter();
+        DuplicateCounter duplicateCounter = new DuplicateCounter();
 
-        use.count(Paths.get("problem2.txt"));
-        use.write(Paths.get("unique_word_counts.txt"));
+        duplicateCounter.count(Paths.get("problem2.txt"));
+        duplicateCounter.write(Paths.get("unique_word_counts.txt"));
     }
 }
